@@ -9,7 +9,86 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-popins">
-   
+<body class="font-popins bg-[#010313] min-h-screen">
+   <main class="bg-[url(images/background.png)] bg-center bg-no-repeat min-h-screen">
+    <!-- Home Section -->
+    <section class="home min-h-screen flex flex-col justify-center items-center hidden">
+        <div class="text-white text-center">
+            <h1 class="text-[170px] ">ALPHABET CLASH</h1>
+            <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+            <button class="btn mt-14">Play Now</button>
+        </div>
+    
+       </section>
+       <!-- Play Ground section -->
+       <section class="play-ground flex flex-col justify-center items-center gap-24 pt-24 hidden">
+        <!-- screen -->
+        <div class="artboard artboard-horizontal phone-6 bg-[#FFFFFFB3] border-[20px] rounded-2xl border-[#010313CC] flex flex-col items-center">
+            <div class= " text-center ">
+              <p class="bg-[#2F2941] pb-3 px-6 text-white rounded-b-xl">Don't watch keyboard  while playing...</p>
+            </div>
+            <div class="flex justify-center items-center h-full">
+              <p class="text-9xl font-semibold">y</p>
+            </div>
+        </div>
+        <!-- keybord start-->
+        <div class="">
+            <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd class="kbd">q</kbd>
+                <kbd class="kbd">w</kbd>
+                <kbd class="kbd">e</kbd>
+                <kbd class="kbd">r</kbd>
+                <kbd class="kbd">t</kbd>
+                <kbd class="kbd">y</kbd>
+                <kbd class="kbd">u</kbd>
+                <kbd class="kbd">i</kbd>
+                <kbd class="kbd">o</kbd>
+                <kbd class="kbd">p</kbd>
+              </div> 
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd class="kbd">a</kbd>
+                <kbd class="kbd">s</kbd>
+                <kbd class="kbd">d</kbd>
+                <kbd class="kbd">f</kbd>
+                <kbd class="kbd">g</kbd>
+                <kbd class="kbd">h</kbd>
+                <kbd class="kbd">j</kbd>
+                <kbd class="kbd">k</kbd>
+                <kbd class="kbd">l</kbd>
+              </div> 
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd class="kbd">z</kbd>
+                <kbd class="kbd">x</kbd>
+                <kbd class="kbd">c</kbd>
+                <kbd class="kbd">v</kbd>
+                <kbd class="kbd">b</kbd>
+                <kbd class="kbd">n</kbd>
+                <kbd class="kbd">m</kbd>
+                <kbd class="kbd">/</kbd>
+              </div>
+        </div>
+        <!-- keybord end-->
+        <!-- Life Score -->
+        <div class="flex justify-between w-3/6">
+          <button class="btn bg-[#894189] text-white">
+            life
+            <img src="./images/life.svg" alt="">
+            1
+          </button>
+          <button class="btn bg-[#360490] text-white">
+            Score
+            <img src="./images/monitiz.svg" alt="">
+          </button>
+        </div>
+       </section>
+       <!-- live score -->
+       <section class="score flex justify-center items-center min-h-screen">
+        <div class="px-12 py-11 rounded-2xl text-center bg-gradient-to-br from-white to-gray-400" style="background-image: linear-gradient(136.67deg, rgba(255, 255, 255, 0.56) 0%, rgba(152, 151, 151, 0) 102.037%);">
+          <h1 class="text-white text-6xl "><span class="font-semibold">Score :</span> <span>14</span></h1>
+          <button class="btn mt-4 mb-4">Play Again </button>
+          <p class="text-white">Practice will make you Pro</p>
+        </div>
+       </section>
+   </main>
 </body>
 </html>
